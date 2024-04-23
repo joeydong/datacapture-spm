@@ -7,17 +7,17 @@ let package = Package(
     name: "Scandit Data Capture SDK",
     platforms: [.iOS(.v13)],
     products: [
-		.library(name: "ScanditBarcodeCapture", targets: ["ScanditBarcodeCapture", "ScanditSPMStub"]),
-		.library(name: "ScanditCaptureCore", targets: ["ScanditCaptureCore", "ScanditSPMStub"]),
-		.library(name: "ScanditIdCapture", targets: ["ScanditIdCapture", "ScanditSPMStub"]),
-		.library(name: "ScanditIdAamvaBarcodeVerification", targets: ["ScanditIdAamvaBarcodeVerification", "ScanditSPMStub"]),
-		.library(name: "ScanditLabelCapture", targets: ["ScanditLabelCapture", "ScanditSPMStub"]),
-		.library(name: "ScanditPriceLabel", targets: ["ScanditPriceLabel", "ScanditSPMStub"]),
-		.library(name: "ScanditLabelCaptureText", targets: ["ScanditLabelCaptureText", "ScanditSPMStub"]),
-		.library(name: "ScanditParser", targets: ["ScanditParser", "ScanditSPMStub"]),
-		.library(name: "ScanditTextCapture", targets: ["ScanditTextCapture", "ScanditSPMStub"]),
-		.library(name: "ScanditTXT", targets: ["ScanditTXT", "ScanditSPMStub"]),
-		.library(name: "ScanditIDC", targets: ["ScanditIDC", "ScanditSPMStub"]),
+		.library(name: "ScanditBarcodeCapture", targets: ["ScanditBarcodeCapture"]),
+		.library(name: "ScanditCaptureCore", targets: ["ScanditCaptureCore"]),
+		.library(name: "ScanditIdCapture", targets: ["ScanditIdCapture"]),
+		.library(name: "ScanditIdAamvaBarcodeVerification", targets: ["ScanditIdAamvaBarcodeVerification"]),
+		.library(name: "ScanditLabelCapture", targets: ["ScanditLabelCapture"]),
+		.library(name: "ScanditPriceLabel", targets: ["ScanditPriceLabel"]),
+		.library(name: "ScanditLabelCaptureText", targets: ["ScanditLabelCaptureText"]),
+		.library(name: "ScanditParser", targets: ["ScanditParser"]),
+		.library(name: "ScanditTextCapture", targets: ["ScanditTextCapture"]),
+		.library(name: "ScanditTXT", targets: ["ScanditTXT"]),
+		.library(name: "ScanditIDC", targets: ["ScanditIDC"]),
 
     ],
     dependencies: [],
@@ -33,7 +33,5 @@ let package = Package(
 		.binaryTarget(name: "ScanditTextCapture", url: "https://ssl.scandit.com/sdk/download/scandit-datacapture-ios-text-6.23.0-xcframework.zip", checksum: "210b910c47ab178e51673e09243ef408afa6385435d9c85a545a4906b31d66f6"),
 		.binaryTarget(name: "ScanditTXT", url: "https://ssl.scandit.com/sdk/download/scandit-datacapture-ios-txt-6.23.0-xcframework.zip", checksum: "5ca88901c161916f99ac26df531d03648937da9d540fb4d895abd5a47c29fc6a"),
 		.binaryTarget(name: "ScanditIDC", url: "https://ssl.scandit.com/sdk/download/scandit-datacapture-ios-idc-6.23.0-xcframework.zip", checksum: "d12ffe6e50edbcef7b4d11e2292428905d9a8b173f2dba038b3e9e898ad91a99"),
-		.target(name: "ScanditSPMStub"),
-
     ]
 )
